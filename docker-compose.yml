@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  apache:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: php
+    restart: always
+    ports:
+      - "81:81"
+    volumes:
+      - .:/var/www/html
