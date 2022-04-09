@@ -17,7 +17,7 @@ class Solution
         ];
         $sum = 0;
         $words = str_split($word);
-        for ($x = 0; $x < count($words); $x++) {
+        for ($x = 0; $x <= count($words); $x++) {
             if ($words[$x] . $words[$x + 1] === 'IV') {
                 $sum += 4;
                 $x++;
