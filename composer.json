@@ -1,23 +1,26 @@
 {
-    "name": "root/html",
-    "autoload": {
-        "psr-4": {
-            "Root\\Html\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Joao Lucas",
-            "email": "luccas332@gmail.com"
-        }
-    ],
-    "require": {},
-    "require-dev": {
-        "phpunit/phpunit": "^9"
+  "name": "root/html",
+  "autoload": {
+    "psr-4": {
+      "Root\\Html\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Joao Lucas",
+      "email": "luccas332@gmail.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  },
+  "scripts": {
+    "tests": "phpunit"
+  }
 }
