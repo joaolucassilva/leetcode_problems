@@ -11,26 +11,16 @@ class RomanToIntegerTest extends TestCase
 {
     private Solution $solution;
 
-    /**
-     * @dataProvider dataProvider
-     */
-    public function testIsRomanNumber($expect, $word): void
-    {
-        $this->assertSame($expect, $this->solution->romanToInt($word));
-    }
-
-    public function dataProvider(): array
-    {
-        return [
-            [3, 'III'],
-            [58, 'LVIII'],
-            [1994, 'MCMXCIV'],
-        ];
-    }
-
     protected function setUp(): void
     {
         parent::setUp();
         $this->solution = new Solution();
+    }
+
+    public function testIsRomanNumber(): void
+    {
+        $this->assertSame(3, $this->solution->romanToInt('III'));
+        $this->assertSame(58, $this->solution->romanToInt('LVIII'));
+        $this->assertSame(1994, $this->solution->romanToInt('MCMXCIV'));
     }
 }
