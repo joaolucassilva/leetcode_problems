@@ -17,40 +17,36 @@ class Solution
         ];
         $sum = 0;
         $words = str_split($word);
-        for ($x = 0; $x <= count($words); $x++) {
-            if ($words[$x] . $words[$x + 1] === 'IV') {
-                $sum += 4;
-                $x++;
-            } else {
-                if ($words[$x] . $words[$x + 1] === 'IX') {
+        for ($x = 0; $x < count($words); $x++) {
+            switch ($words[$x] . $words[$x + 1]) {
+                case 'IV':
+                    $sum += 4;
+                    $x++;
+                    break;
+                case 'IX':
                     $sum += 9;
                     $x++;
-                } else {
-                    if ($words[$x] . $words[$x + 1] === 'XL') {
-                        $sum += 40;
-                        $x++;
-                    } else {
-                        if ($words[$x] . $words[$x + 1] === 'XC') {
-                            $sum += 90;
-                            $x++;
-                        } else {
-                            if ($words[$x] . $words[$x + 1] === 'CD') {
-                                $sum += 400;
-                                $x++;
-                            } else {
-                                if ($words[$x] . $words[$x + 1] === 'CM') {
-                                    $sum += 900;
-                                    $x++;
-                                } else {
-                                    $sum += $roman[$words[$x]];
-                                }
-                            }
-                        }
-                    }
-                }
+                    break;
+                case 'XL':
+                    $sum += 40;
+                    $x++;
+                    break;
+                case 'XC':
+                    $sum += 90;
+                    $x++;
+                    break;
+                case 'CD':
+                    $sum += 400;
+                    $x++;
+                    break;
+                case 'CM':
+                    $sum += 900;
+                    $x++;
+                    break;
+                default:
+                    $sum += $roman[$words[$x]];
             }
         }
-
         return $sum;
     }
 }
