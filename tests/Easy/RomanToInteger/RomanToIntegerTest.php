@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit\Easy\RomanToInteger;
+namespace Tests\Easy\RomanToInteger;
 
 use PHPUnit\Framework\TestCase;
 use Root\Html\Easy\RomanToInteger\Solution;

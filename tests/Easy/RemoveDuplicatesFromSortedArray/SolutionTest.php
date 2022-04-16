@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Unit\Easy\RemoveDuplicatesFromSortedArray;
+namespace Tests\Easy\RemoveDuplicatesFromSortedArray;
 
-use Root\Html\Easy\RemoveDuplicatesFromSortedArray\Solution;
 use PHPUnit\Framework\TestCase;
+use Root\Html\Easy\RemoveDuplicatesFromSortedArray\Solution;
 
 class SolutionTest extends TestCase
 {

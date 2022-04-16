@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit\Easy\PalindromeNumber;
+namespace Tests\Easy\PalindromeNumber;
 
 use PHPUnit\Framework\TestCase;
 use Root\Html\Easy\PalindromeNumber\Solution;

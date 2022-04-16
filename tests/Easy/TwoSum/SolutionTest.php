@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit\Easy\TwoSum;
+namespace Tests\Easy\TwoSum;
 
 use PHPUnit\Framework\TestCase;
 use Root\Html\Easy\TwoSum\Solution;
